@@ -1,0 +1,285 @@
+/*GLOBAL STYLES*/
+
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #777;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+/*Section styles*/
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section .section-header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+section .section-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+section .section-caption {
+    font-family: 'Droid Serif', sans-serif;
+    font-style: italic;
+}
+
+/*NAV-BAR* do sprawdzenia!!!*/
+
+#main-nav a.bootstrap-bar {
+    color: #fff;
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 2em;
+}
+
+#main-nav .nav-item a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-nav .nav-item a:hover {
+    color: #10D8D8;
+}
+
+/*HEADER*/
+
+.main-header {
+    height: 100vh;
+    /*    width: 100vw;* nie trzeba szerokości bo jest defaultowa w bootstrapie*/
+    /*    przyciemniene obrazka*/
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.45)), url(../img/header/pictures_on_the_wall.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.header-caption h2 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: italic;
+    font-size: 3em;
+}
+
+.header-caption h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+}
+
+.main-header .read-more {
+    background-color: #10D8D8;
+    color: #fff;
+    border-bottom-color: #10D8D8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+.main-header .read-more:hover {
+    background-color: #fff;
+    color: #10D8D8;
+    border-bottom-color: #10D8D8;
+
+}
+
+/*SERVICE SECTION*/
+
+#services-content .font {
+    background-color: #10D8D8;
+    border: 10px solid #10D8D8;
+    border-radius: 50%;
+
+    font-size: 2em;
+    color: #fff;
+    transition: all 2s;
+}
+
+#services-content .font:hover {
+    background-color: #fff;
+    color: #10D8D8;
+    border: 10px solid #fff;
+    transform: rotate(1000deg);
+}
+
+
+#services-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  PODZIAŁ SEKCJI PIOTRKA*/
+
+#services-content2 .fa {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    font-size: 3em;
+    background-color: #10D8D8;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid #10D8D8;
+    transition: all 2s;
+}
+
+#services-content2 .fa:hover {
+    transform: rotate(360deg);
+    background-color: #fff;
+    color: #10D8D8;
+    border: 1px solid #10D8D8;
+}
+
+/*SEKCJA PORTFOLIO*/
+
+#portfolio {
+    background-color: #f7f7f7;
+}
+
+#portfolio .img1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg)
+}
+
+#portfolio .img2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg)
+}
+
+#portfolio .img3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg)
+}
+
+#portfolio .img4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg)
+}
+
+#portfolio .img5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg)
+}
+
+#portfolio .img6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg)
+}
+
+#portfolio .portfolio-image {
+    background-size: cover;
+    height: 200px;
+
+}
+
+#portfolio .cover_image {
+    opacity: 0;
+}
+
+#portfolio .portfolio-image:hover .cover_image {
+    background-color: rgba(16, 216, 216, 0.54);
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+/*SEKCJA PIOTRKA*/
+
+#portfolio .portfolio-image{
+    height: 300px;
+    overflow: hidden;
+    
+}
+#portfolio .portfolio-image-bg{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+#portfolio .portfolio-image-1{
+    background-image: url(../img/portfolio/box_of_cookies.jpg)
+}
+#portfolio .portfolio-image-2{
+    background-image: url(../img/portfolio/chaotic_paint.jpg)
+}
+#portfolio .portfolio-image-3{
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg)
+}
+#portfolio .portfolio-image-4{
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg)
+}
+#portfolio .portfolio-image-5{
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg)
+}
+#portfolio .portfolio-image-6{
+    background-image: url(../img/portfolio/typing_on_laptop.jpg)
+}
+#portfolio .protfolio-image-mask{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(16, 216, 216, 0.54);
+    font-size: 2em;
+    color: #fff;
+    opacity: 0;
+}
+#portfolio .portfolio-image-bg:hover .protfolio-image-mask{
+    opacity: 1;
+}
+#portfolio .portfolio-image-bg:hover{
+    transform: scale(1.5);
+}
+#portfolio figcaption{
+    background-color: #fff;
+}
+
+/*MEET OUR TEAM SECTION*/
+#meet-team .meet-team-content{
+      display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#meet-team .team-image{
+    height: 300px;
+}
+
+#meet-team .team-image-1{
+    background-image: url(../img/team/man-1.jpg)
+}
+
+#meet-team .font-content{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#meet-team .font-icons a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #222222;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3em;
+    transition: all 0.3s;
+}
+#meet-team .font-icons a:hover{
+   background-color: #10D8D8; 
+}
+/*CONTACT SECTION*/
+#contact{
+    background-image: url(../img/footer/world-map.jpg);
+}
+#contact .section-header{
+    color: #fff;
+}
